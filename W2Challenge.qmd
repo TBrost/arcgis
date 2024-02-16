@@ -1,0 +1,60 @@
+---
+title: "W02 Challenge: Heber Valley Girls Camp"
+subtitle: "Tyson Brost"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Introduction:**
+
+The purpose of this project is to plan and construct a geodatabase for the Heber valley Girls Camp. It will for the foundation of a comprehensive fire safety plan including the installation of fire hydrants, a station house and evacuation plan.
+
+**Methods:**
+
+-   Include your schema table from the Challenge. Give the table a title. Write a short description of your schema in a complete enough manner that someone else could use it to build the geodatabase, feature datasets, feature classes and attribute fields.
+
+    ### Schema Table
+
+    | Feature Class        | Class Type | Attribute Fields         |
+    |----------------------|------------|--------------------------|
+    | Lake                 | Polygon    | Name,Depth,etc           |
+    | Building             | Polygon    | Name, Type, capacity     |
+    | Road                 | Line       | Name, m-values, type     |
+    | Trail                | Line       | Name, m-values, type     |
+    | Dirt/gravel pavement | Polygon    | Name, m-values, capacity |
+    | Challenge Course     | Polygon    | Name                     |
+
+    The above schema constitutes the majority of the planned features in the project, additional features were added during development. The intent was to include as many transport and location related features as possible to ensure they can be accounted for in an evacuation route if needed.
+
+-   Include a screenshot of your geodatabase expanded to show all appropriate feature classes Give the screenshot a title.
+
+    ![Database](images/W2/databse.png)
+
+-   Include a screenshot of the field headers for one or more of your attribute tables. Give the screenshot a title.
+
+    ![Building Feature Class Attribute Table](images/W2/buildingsAttTable.png)
+
+**Results**
+
+-   Include a jpg of your map that shows the points, lines, and polygons that you digitized and the corrected lake. You do not need to digitize the whole map. This does not need to be a layout.
+
+    ![(I got distracted and digitized most of it)](images/W2/Map.jpg)
+
+**Conclusion**
+
+-   Include one or more of the following a) how your geodatabase schema meets the purpose that you stated in the introduction, b) how you might apply geodatabase schema and metadata to another situation or your future career, or c) what future, related work you might do.
+
+    Once the roads and trails have been completely mapped, and additional data gathered for the depth and average water capacity of the lakes, calculations can be done to optimize the evacuation of persons from varied locations based on the listed capacities and the lengths of roads and trails available from that location. Additionally, I'm sure there is a way to create objects with a radius based on elevation combined with linear distance, this could be used to calculate the required locations to install hydrants in order to adequately cover all critical buildings and structure areas.
+
+    ![Zoomed to Camp Areas](images/W2/Full.png)
+
+    ![Zoomed Map](images/W2/Zoomed.png)
+
+**Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   Data from class download
+
+    -   US Forest management areas (portal)

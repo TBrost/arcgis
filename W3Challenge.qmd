@@ -1,0 +1,61 @@
+---
+title: "W03 Challenge: Hometown Map"
+subtitle: "Tyson Brost - 1/27/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Introduction:**
+
+The focus of this map is to illustrate to many places I have lived throughout my life. I choose this idea for this project because I've always thought it might be fun to make a map of all the places I have lived. The intended audience is anyone wanted to know more about me or my family.
+
+**Methods:**
+
+-   Include a table or description of your geodatabase schema. Someone else should be able to build the feature class(es) and attribute fields from your description or table. Write a figure caption for your attribute table that briefly explains it.
+
+    Below is my schema with examples of each field in parentheses.
+
++---------------+-------+---------------------------------------------------------+
+| Feature Class | Type  | Attributes                                              |
++===============+=======+=========================================================+
+| POI           | Point | Name, Timeframe (2014-2015), Length of stay (months), \ |
+|               |       | Events (learned to ride bike), Features (creek), \      |
+|               |       | Period (gradeschool), Type (house/apt)                  |
++---------------+-------+---------------------------------------------------------+
+
+-   Explain why you chose the symbology you used.
+
+    The specific shape of the houses I have lived in is irrelevant for the purpose of this map, so the simpler point that shares primarily the 'Where' rather than the 'How big' was adequate. Since all the places are houses or apartments, using different symbols would be confusing, rather I color coded them by the period of my life they represented to group them together and encode an additional level of information in the visual map alone.
+
+**Results**
+
+-   [**Map layout**]{.underline}. Make sure your map meets all the criteria of a cartographically good map layout and meets the requirements given in the Challenge. 
+
+    ![](images/W3/Layout.jpg)
+
+-   Write a figure caption for your map layout that briefly explains it. 
+
+    Due to the places I have lived being both extremely spread out and very close together, displaying them all in one map was a bit of a challenge. I ended up using the inset function in a bit of a reversed mode, with one large primary map showing the spread out individual places as well as the general location of some of the groups. Then I created 3 'outset' maps that zoomed into specific high density areas.
+
+**Conclusion**
+
+-   State how well you think your map layout communicates its purpose as stated in the Introduction.
+
+    After reviewing my map and refering to the [Map Evaluation Guidelines](http://downloads.esri.com/MappingCenter2007/arcGISResources/more/MapEvaluationGuidelines.pdf), I thing that my map adequately communicates its purpose and effectively meets the proposed use case.
+
+-   State one area you might change or improve given more time or resources.
+
+    -   Upon review, I realized that adding a line type class that show the direction and connection between individual points would be beneficial, making it easy to identify the order and path of my moves without the need to consult a table.
+
+    -   Additionally, The numbers and arrows for my mission and college insets overlap are and hard to read, I need to adjust these elements so they don't overlap.
+
+    -   Finally, I think that an outset map of the Topeka area would be more beneficial than my current outset of just Kansas.
+
+**Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Source data from map author

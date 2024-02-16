@@ -1,0 +1,81 @@
+---
+title: "Learning Journal Week 1"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Section 1: ESRI Tutorials, Lessons and Certificates
+
+#### Tutorial name(s) and link(s):
+
+-   [Introducing ArcGIS Pro.](https://pro.arcgis.com/en/pro-app/latest/get-started/introducing-arcgis-pro.htm) (\~ 25 minutes)
+
+-   [Navigate maps and scenes.](https://pro.arcgis.com/en/pro-app/latest/get-started/navigate-your-data.htm) (\~15 minutes)
+
+-   [Create a project.](https://pro.arcgis.com/en/pro-app/latest/get-started/create-a-project.htm) (\~45 minutes)
+
+-   [Add data to a project.](https://pro.arcgis.com/en/pro-app/latest/get-started/add-data-to-your-project.htm) (\~30 minutes)
+
+-   [Explore data.](https://pro.arcgis.com/en/pro-app/latest/get-started/explore-your-data.htm) (\~45 minutes)
+
+-   [Author a map.](https://pro.arcgis.com/en/pro-app/latest/get-started/author-a-map.htm) (\~45 minutes)
+
+#### Insight: The Symbology and Analytics tabs are full of super useful features
+
+#### Screenshot(s):
+
+**Symbology:**
+
+![](images/symbology.png){width="539"}
+
+**Hiding Layers at zoom:**
+
+![](images/LayerHiding.png){width="549"}
+
+**Attribute table:**
+
+![](images/attributetable.png){width="552"}
+
+**Data Designer:**
+
+![](images/datadesigner.png)
+
+**Scaling:**
+
+![](images/scaling.png){width="235"}
+
+-   Tutorial final map:
+
+New Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)
+
+| NEW Tool/Process                                                              | Tool/Process Results                                                                                                         | Purpose                                                                                                |
+|--------------------|---------------------------|-------------------------|
+| *List of the new tools or processes introduced in this professional learning* | *Describe the results including whether it adds new data to the geodatabase. When helpful to you, include a mini-screenshot* | *Explain the reason this tool or process was used in this situation*                                   |
+| How to utilize and navigate differen panes in ARCGIS Pro                      | Changes views and allows manipulation of visuals and data                                                                    | Allows combination and customization of various options all at once                                    |
+| Explore tool                                                                  | Granular controls to navigate both 2D and 3D map layers                                                                      | Allows more indepth exploration of data and layers in a visual mode, can display linked side-by-sides. |
+| Pairwise Clip tool                                                            | under Analysis tab                                                                                                           | Will clip data from Source 1 to its interaction with Source 2                                          |
+| Symbology                                                                     | Right-click on layer in contents pane                                                                                        | Allows editing of groups and appearance attributes in a given layer                                    |
+| Attribute Table                                                               | Same as Symbology                                                                                                            | Allows access to layer data attributes as well as addition and deletion of specific attribute data     |
+| Data Designer                                                                 | Same as above                                                                                                                | Change overall table attributes, column names, data types etc.                                         |
+| Data Query                                                                    | Top Navbar, 'Select by Attributes'                                                                                           | Opens Layer Query UI interface, allowing selection of areas by selection statements                    |
+| Summary Stats                                                                 | Analysis tab                                                                                                                 | Allows creation of tables and summaries for selected regions                                           |
+| Configure Pop-ups                                                             | Right click layer, Configure Pop-ups                                                                                         | Edits what is included in pop-ups when selecting a geo-region                                          |
+| Scaling                                                                       | Within Symbology pane, Swap to scales tab                                                                                    | Allows you to adjust display ranges of categories within a layer.                                      |
+
+Answers to questions when applicable (e.g., Week 8)
+
+## Section 2: Data Sources
+
+Knowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.
+
+-   ESRI Sources
+
+-   Portal
+
+## Section 3: Class How-To's
+
+In this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that's not part of the assigned topics.
+
+Nothing new this week.

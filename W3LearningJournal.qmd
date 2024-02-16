@@ -1,0 +1,63 @@
+---
+title: "Week 3 Learning Journal"
+date: "1/24/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Section 1: Creating Points on a Map & Building a Geodatabase
+
+Tutorial name(s) and link(s):
+
+[Symbolize Your Data](https://pro.arcgis.com/en/pro-app/latest/get-started/symbolize-your-data.htm)
+
+[Labeling Your Map](https://pro.arcgis.com/en/pro-app/get-started/label-your-map.htm)
+
+[Simple Map Layout](https://www.youtube.com/watch?v=G-a4Qowfi0o)
+
+[Make a Layout](https://pro.arcgis.com/en/pro-app/latest/get-started/add-maps-to-a-layout.htm)
+
+Insight: Appropriate application of symbols and annotation is essential to building a good map that can effectively share the information in your data and provide answers to questions and/or spark meaningful insights.
+
+Screenshot(s):
+
+### Symbolize Your Data
+
+![Symbolizing Data](images/SymbolizeYourData.png)
+
+### Labeling Your Map
+
+![Labeling a Map](images/LabelYourMap.png)
+
+### Make a Layout
+
+![Building a Layout](images/Layouts.png)
+
+New Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)
+
+| NEW Tool/Process                                                                 | Tool/Process Results                                                                                                    | Purpose                                                                                        |
+|----------------------|-------------------------------|-------------------|
+| List of the new tools or processes introduced in this Professional Learning new. | Describe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot. | Explain the reason this tool or process was used in this situation.                            |
+| Symbology Properties                                                             | Add effects to using the structure tab within properties in symbology                                                   | Adjust visual layers to allow more effective communication of data                             |
+| Symbol layer Drawing                                                             | Found in main tab of symbology pane                                                                                     | Allows adjusting of layer draw type and order when a layer has multiple symbols                |
+| labeling                                                                         | Right click layer in contents pane                                                                                      | Clearly explicit importation of a file to a specific location                                  |
+| label Properties                                                                 | Position, Fitting strategy, and class                                                                                   | Adjustment of label placement, text size and specification of labeling rules from SQL          |
+| Map Frame Activation                                                             | layout tab                                                                                                              | Allows adjustment of positioning and viewpoint of a selected map frame.                        |
+| Dynamic Text                                                                     | 'Insert' tab, graphics and text group                                                                                   | Creates a dynamic element for the map that can contain a mix of static and tag references text |
+
+Answers to questions when applicable (e.g., Week 8)
+
+## Section 2: Data Sources
+
+Knowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.
+
+-   Data Portal
+
+## Section 3: Class How To's
+
+In this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that's not part of the assigned topics.
+
+Tip: When building contours, always use the original DEM (Digital Elevation Model)
+
+[Tapered river effect](https://www.youtube.com/watch?v=IK3HxTFvnqA)

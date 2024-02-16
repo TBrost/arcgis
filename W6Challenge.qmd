@@ -1,0 +1,247 @@
+---
+title: "W06 Mini-Challenges Utah Faults"
+subtitle: "Tyson Brost - 2/16/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Mini-Challenge 1:
+
+#### Map:
+
+![Counties with and without faults](images/W6/MC1.png)
+
+#### Methods Table:
+
+|                                              |                                                                                                                |                                                                               |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used           | Why I used this tool?                                                                                          | What it did (consider both the map and the attribute table)                   |
+| Utah counties and Utah faults, Spatial join, | Joined the data in the faults onto the counties so I could see in one layer which counties had a fault present | Created a new att table with data from counties joined to each fault segment. |
+
+**Note:** I could have used select by att and then exported the features after the join to a new feature class as outlined in the prompt but it was simpler to display the counties with and without a fault when they are still both in one class
+
+## Mini-Challenge 2:
+
+#### Map:
+
+![Utah Faults att table](images/W6/MC2.png)
+
+#### Methods Table:
+
+|                                                             |                                                                 |                                                             |
+|-------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------|
+| Geoprocessing tool and data I used                          | Why I used this tool?                                           | What it did (consider both the map and the attribute table) |
+| I used the Ut Faults layer and the calculate geometry tool. | Allows conversion of one geometric measurement to another unit. | No changes to the map, new column added to attribute table. |
+
+: 1) Which fault segment has the longest length in miles?  **Utah Lake faults**\
+2) How long is it in miles? **81.74 Miles**
+
+## Mini-Challenge 3:
+
+#### Map:
+
+![Dissolved Utah Faults att table](images/W6/MC3.png)
+
+#### Methods Table:
+
+|                                                                   |                                                                                 |                                                                                                        |
+|-------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used                                | Why I used this tool?                                                           | What it did (consider both the map and the attribute table)                                            |
+| Used the dissolve tool on my calculated geometry layer from MC 2. | Combines disparate features of one group into one whole with summarized values. | Created a new layer & att table that was grouped by fault name with lengths summarized to their total. |
+
+: 1) How many different earthquake faults are in Utah? **63**\
+2) Which fault is the longest? **Drum Mountains fault zone**\
+3) How long is the longest fault in miles? **137.3 Miles**
+
+## Mini-Challenge 4:
+
+#### Map:
+
+![Wasatch Fault Zone](images/W6/MC4.png)
+
+#### Methods Table:
+
+|                                      |                                                                                                                                   |                                                                         |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Geoprocessing tool and data I used   | Why I used this tool?                                                                                                             | What it did (consider both the map and the attribute table)             |
+| Select by attribute, export features | Allowed me to select all fault sections whose name contained 'wasatch' anywhere and then export them to a seperate feature class. | Created a new feature class & att table with only the selected objects. |
+
+: 1) Why didn't the tool you used in Mini-Challenge 3 dissolve (combine into one record) the Wasatch fault? **The name field contains additional levels specifying the section of the wasatch fault for each piece of the object.**
+
+## Mini-Challenge 5 (a/b):
+
+### Part A
+
+#### Map:
+
+![Counties by total fault length](images/W6/MC5a.png)
+
+#### Methods Table:
+
+|                                                                                                                                                |                                                                                                       |                                                                                                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used                                                                                                             | Why I used this tool?                                                                                 | What it did (consider both the map and the attribute table)                                                      |
+| I used the calculated geometry layer from MC2 and spatially joined that to UT counties. Then conducted a summarize within on the joined layer. | Connect fault lengths to county polygons, then summarize the values of fault data within each county. | Created a new feature class with only 1 row for each county with summarized total fault lengths in a new column. |
+
+Which county has the greatest seismic risk based on sum of the fault lengths? **Millard**
+
+### Part B
+
+#### Map:
+
+![Counties by risk index](images/W6/MC5b.png)
+
+#### Methods Table:
+
+|                                                                                                                                          |                                                                           |                                                             |
+|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|
+| Geoprocessing tool and data I used                                                                                                       | Why I used this tool?                                                     | What it did (consider both the map and the attribute table) |
+| I used the aforementioned summarizeWithin layer and then used the calculate field tool to create a new column with the outlined formula. | Allows creation of a new field based on a formula and/or existing fields. | Created a new column in the attribute table.                |
+
+: 1)Which county has the greatest seismic risk based on the 'Risk Index'? **Salt Lake**\
+2) Why is the 'Risk Index' a better measure of seismic risk than only looking at fault length?  **Even if earthquakes are super probable in county a, if county a has a population of 5 people, the impacts would be minimal. While if quakes are only somewhat common in county b, if county b has millions of people in it, the impacts can still be severe.**
+
+## Mini-Challenge 6:
+
+#### Map:
+
+![Student collected historic sites](images/W6/MC6.png)
+
+#### Methods Table:
+
+|                                    |                                                                     |                                                                                                                                     |
+|------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used | Why I used this tool?                                               | What it did (consider both the map and the attribute table)                                                                         |
+| Merge                              | Allows merging spatially separate but attribute equal data sources. | Created a new feature class with the same columns as the originals but with a total length of each original appended to the others. |
+
+: How many buildings are in the output feature class? **56**
+
+## Mini-Challenge 7:
+
+#### Map:
+
+![1 & 5 Mile buffers of Wasatch Fault](images/W6/MC7.png)
+
+#### Methods Table:
+
++---------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------+
+| Geoprocessing tool and data I used          | Why I used this tool?                                                                        | What it did (consider both the map and the attribute table) |
++---------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------+
+| Wasatch fault from previous MC, Buffer tool | Allows creation of a new polygon centered around an existing layer with a specified 'width'. | Created a new attribute table for each buffer level.        |
+|                                             |                                                                                              |                                                             |
+|                                             |                                                                                              | Added a feature layer of a polygon to the map               |
++---------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------+
+
+:  1) Explain why you chose the dissolve method shown in your map. **I used the option to dissolve all features into a single output feature since the wasatch fault layer was still broken into seperate sections. The meant that my buffer attribute table only contained 1 row rather than 1 'true' row split into sections.**
+
+## Mini-Challenge 8:
+
+#### Map:
+
+![Schools within 5 mile buffer](images/W6/MC8.png)
+
+#### Methods Table:
+
+|                                                             |                                                                          |                                                                                                                             |
+|-------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used                          | Why I used this tool?                                                    | What it did (consider both the map and the attribute table)                                                                 |
+| Intersect on wasatch fault layer and my 5 mile buffer layer | Remove data from one layer where it does not overlap with another layer. | Created a new class and att table containing only the points from the schools class that do sit inside of the buffer class. |
+
+: 1) How many schools lie within 5 miles of the Wasatch fault? **737**
+
+## Mini-Challenge 9:
+
+#### Map:
+
+![Schools outside of 5 mile buffer](images/W6/MC9.png)
+
+#### Methods Table:
+
+|                                             |                                                                  |                                                                                                                               |
+|---------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used          | Why I used this tool?                                            | What it did (consider both the map and the attribute table)                                                                   |
+| Erase on my wasatch and 5 Mile buffer layer | Remove data from one layer where it overlaps with another layer. | Created a new class and att table containing only the points from the schools class that dont sit inside of the buffer class. |
+
+: 1) How many schools lie more than 5 miles from the Wasatch fault? **764**
+
+## Mini-Challenge 10:
+
+### Map:
+
+![Schools by liquefaction potential](images/W6/MC10.png)
+
+#### Methods Table:
+
+|                                                  |                                                                                                                                          |                                                                                                                                                     |
+|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used               | Why I used this tool?                                                                                                                    | What it did (consider both the map and the attribute table)                                                                                         |
+| Intersect on liquefaction and utah schools layer | Both joins the liquefaction attribute fields to schools and filters the schools layer to only those which we have liquefaction data for. | Filtered the schools layer down to only those within the liquefaction layer and joined the attributes of liquefaction polygon to the school points. |
+
+: 1) Which other process could attach the PCodes to the schools? **Spatial join**
+
+## Mini-Challenge 11:
+
+#### Maps:
+
+#### Intersect:
+
+![Intersection symbolized](images/W6/MC11_int.png)
+
+#### Union:
+
+![Union Symbolized](images/W6/MC11_un.png)
+
+#### Methods Table:
+
+|                                    |                                        |                                                                                                                           |
+|------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Geoprocessing tool and data I used | Why I used this tool?                  | What it did (consider both the map and the attribute table)                                                               |
+| Intersect                          | Join data from multiple polygon layers | Filtered data to only overlapping areas and created new attribute fields on one layer for those on the intersected layer. |
+| Union                              | Join data from multiple polygon layers | Created new polygons for overlapping areas on these layers but maintained the non overlapping sections as well.           |
+
+: 1) Based on the maps, what is the difference between union and intersect? **Intersect will avoid the creation of null data.**\
+2a) How many records are in the attribute table for union and intersect? **Int: 246, Un: 286**\
+2b) How many fields? **Int: 14, Un: 14**\
+3) Why are the outputs from union and intersect different? **Union maintains non overlapping polygon sections.**\
+4) Which output would you share with the project geologist for her analysis? **Since we are interesting in comparing these attributes, the sections with no overlap are useless to us. additionally as far as mapping goes, these extra sections use one of our colors reducing the power of our diversity within the overlapping usable sections.**
+
+## Mini-Challenge 12:
+
+#### Map:
+
+![Recommended allocations for percent of funding by county](images/W6/MC12.png)
+
+#### Methods Table:
+
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Geoprocessing tool and data I used                                                                           | Why I used this tool?                                                                                                                                                                                                          | What it did (consider both the map and the attribute table)                                  |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Definition Query - Cultural Resources                                                                        | Since building codes were applied in 1975 we only want buildings built before this year.                                                                                                                                       | Filtered rows in layer when loading in data layer                                            |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Intersect - Cultural Resources & Wasatch counties                                                            | We only need buildings in the selected counties                                                                                                                                                                                | Filtered rows in data layer by geography of another layer                                    |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Merge - All student sourced buildings and the official cultural resources                                    | Some of these points overlap and in the end we need to join the liquefaction potential to all buildings                                                                                                                        | Appended disparate but similar datasets into 1 combined whole.                               |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Intersect - Merged buildings & Liquefaction potential                                                        | Select only buildings for which we have earthquake related data in these counties (only lose 1 point in this process, otherwise calculating a county average and applying it to all buildings would be better)                 | Joined and filtered liquefaction data onto historical site points.                           |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Dissolve - intersect from previous step by county and calculate average Pcode as well as count of buildings. | We can use the average Pcode and count of buildings to create a weighted count in the next step                                                                                                                                | Grouped points by county and provided summary data at the county level                       |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Calculate Field x2                                                                                           | Created a building count field for each county weighted by the average Pcode of a each country.\                                                                                                                               | Used summary data to create meaningful fields with useful attributes for display and action. |
+|                                                                                                              | Then using the total of this weighted counts, create a percentage of weighted counts for each county.\                                                                                                                         |                                                                                              |
+|                                                                                                              | This weighted percentage should be a good representation of what % of the available funding should be given to a given county based on both the number of historical sites as well as the relative risk they are experiencing. |                                                                                              |
++--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+
+: A statement that explains which county should receive the most funding and why (based on your analysis).
+
+**Salt Lake county should receive the most funding. They have the highest weighted percentage of buildings relative to the counties average Pcode.**
+
+## **Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Source data from class
+
+    -   ESRI data portal

@@ -1,0 +1,52 @@
+---
+title: "Week 2 Learning Journal"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Section 1: Creating Points on a Map & Building a Geodatabase
+
+Tutorial name(s) and link(s):
+
+[Creating Points on a Map](https://pro.arcgis.com/en/pro-app/2.9/get-started/create-points-on-a-map.htm)
+
+[Build a Geodatabase to support tourism in Salzburg](https://learn.arcgis.com/en/projects/build-a-geodatabase-to-support-salzburg-tourism/#create-a-geodatabase-project)
+
+Insight: Data will be build upon a variety of coordinate base systems... this needs to be accounted for when combining data from varied sources into a single geodatabase.
+
+Screenshot(s):
+
+### Creating Points on a Map
+
+![](images/create_points.png)
+
+### Salzburg Tourism: ![](images/Salzburg.png)
+
+New Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)
+
+| NEW Tool/Process                                                                 | Tool/Process Results                                                                                                    | Purpose                                                             |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| List of the new tools or processes introduced in this Professional Learning new. | Describe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot. | Explain the reason this tool or process was used in this situation. |
+| Shapefile Properties                                                             | Allows evaluation of spatial reference system used by data                                                              | Ensure resulting mapped data aligns correctly.                      |
+| Batch Create Feature Dataset                                                     | convert multiple shapefiles into feature classes                                                                        | Saves time                                                          |
+| Import single Shapefile                                                          | move a single shape file into a database                                                                                | Clearly explicit importation of a file to a specific location       |
+| Export to geodatabase                                                            | Quickly move multiple shapefiles or feature classes into a geodatabase                                                  | quickly do the above                                                |
+| Add folder connection                                                            | right click folders section in contents pane                                                                            | connect folder on machine to project                                |
+| Create feature Dataset                                                           | rightclick on .gdb                                                                                                      | groups together feature classes                                     |
+| Add data                                                                         | Add feature classes to a basemap from geodatabase                                                                       | Add new layers to a map                                             |
+
+Answers to questions when applicable (e.g., Week 8)
+
+## Section 2: Data Sources
+
+Knowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.
+
+-   Data Portal
+
+## Section 3: Class How Tos
+
+In this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that's not part of the assigned topics.
+
+N/A this week

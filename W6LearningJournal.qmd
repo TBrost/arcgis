@@ -1,0 +1,73 @@
+---
+title: "Week 6 Learning Journal"
+date: "2/14/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Section 1: Geo-processing and Overlay Analysis
+
+Tutorial name(s) and link(s):
+
+-    [Predict Deforestation in the Amazon Rain Forest](https://learn.arcgis.com/en/projects/predict-deforestation-in-the-amazon-rain-forest/#finish-and-print-the-map) (Approx 1 hour)
+
+Insight: ArcGIS provides and extensive array of tools and processes to combine and join data in many ways, there is almost always a 'best' tool for the job since many are specifically designed for a specific purpose. Taking the time to understand you current features, your question, and what you need to to answer you question can save you a huge headache later.
+
+Screenshot(s):
+
+Impact of Proposed Road in Brazil
+
+![](images/Brazil.png)
+
+### Essential Geoprocessing Table
+
+|                                       |                                                                                                                              |                                                                                                                     |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| **Tool**                              | **What it does**                                                                                                             | **Example**                                                                                                         |
+| Buffer                                | Creates a new feature layer where each feature is a specified distance away from the original features.                      | Generating a 500-meter buffer around all rivers to delineate a protected area.                                      |
+| Calculate Geometry                    | Allows for the calculation of geometric properties (such as area, length, or coordinates) of features within a layer.        | Calculating the area of each polygon in a land use dataset.                                                         |
+| Clip                                  | Cuts out a portion of one feature layer using the shape of another layer as the boundary.                                    | Clipping a national forest layer to the boundaries of a specific state.                                             |
+| Create feature class from a selection | Creates a new feature class by copying only the selected portion of a given feature class.                                   | Create a 'Wasatch Area' class by selecting the 5 wasatch counties and creating a feature class from this selection. |
+| Definition Query                      | Filters data in a layer by applying an SQL query                                                                             | Layer has values from 1900-2023, but we only want values pre-1965, a DQ can be applied with this logic.             |
+| Dissolve                              | Aggregates features based on specified attributes, removing boundaries to create a new layer of larger, simplified polygons. | Dissolving a county-level map into a state-level map by merging all counties within each state.                     |
+| Erase                                 | Creates a feature class by overlaying the input features with the polygons of the erase features                             | Select only a portion of a feature class by excluding a section of overlap                                          |
+| Geocoding                             | Convert addresses into geographic coordinates or vice versa, enabling the mapping and analysis of address-based data.        | Transform a list of addresses into a map layer of points representing their locations.                              |
+| Intersect                             | Computes a geometric intersection of the input features                                                                      | Points within a polygon                                                                                             |
+| Merge                                 | Combines multiple input datasets into a single, new output dataset.                                                          | Merging separate layers of lakes, rivers, and ponds into a single water bodies layer.                               |
+| Points to lines                       | Converts a set of points into a line feature by connecting them based on their order or an attribute value.                  | Create a hiking trail line feature from a series of GPS waypoints collected along the trail.                        |
+| Select by location                    | Selects features in a layer based on their spatial relationship to features in another layer.                                | Selecting all buildings within 1 kilometer of a river.                                                              |
+| Select by attribute                   | Selects features in a layer based on a query applied to their attributes.                                                    | Selecting all cities with a population greater than 100,000.                                                        |
+| Spatial Join                          | Joins attributes from one feature to another based on the spatial relationship                                               | Grab data from one class to another                                                                                 |
+| Summarize within                      | Aggregates data from one layer within the boundaries of another layer, summarizing the information.                          | Calculating the total population within each zip code area by summarizing individual household data.                |
+| Union                                 | Computes a geometric union of the input features                                                                             | join features but maintain integrity of original boundaries.                                                        |
+
+### Statements of Understanding
+
+-   Create a new feature class from a selection (This is an important skill that you will use many times).
+
+    -   Right click feature, 'Data', 'Export Features'
+
+-   Find linear units of measure for a coordinate system.
+
+    -   Calculate Geometry tool (analysis tool)
+
+-   Calculate fields in the attribute table.
+
+    -   Open att. table, 'calculate field', can use python here.
+
+-   Use Trace in the editing tools.
+
+    -   The snapping section of this tutorial was great, would've been nice to understand when we did the girls camp challenge.
+
+## Section 2: Data Sources
+
+Knowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.
+
+-   ESRI Tutorial Download
+
+## Section 3: Class How To's
+
+In this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that's not part of the assigned topics.
+
+N/A
