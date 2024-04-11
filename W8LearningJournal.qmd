@@ -1,0 +1,60 @@
+---
+title: "Week 8 Learning Journal"
+date: "2/28/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Section 1: Projections
+
+Tutorial name(s) and link(s):
+
+[Introduction to Coordinate Systems ](https://www.esri.com/training/catalog/5d8258be55cf937306d3bd63/introduction-to-coordinate-systems/ "Link")\
+
+![](images/Cert.png)\
+Certification from Tutorial\
+\
+![](images/ProjVsDis.png)\
+Common Projections and their aspects.
+
+\
+**Define Projection vs Project:**
+
+-   What is the difference between the ArcGIS Pro tools 'Define Projection' and 'Project?'
+
+    -   Define projection is used for data with no coordinate system or with an incorrect coordinate system
+
+    -   Project is used to convert data that has a correct coordinate system but when you want to change it to another coordinate system
+
+-   Which tool do you use if the data are missing spatial reference?
+
+    -   Define projection
+
+-   Which would you use if you want to transform data from a geographic to a projected coordinate system?
+
+    -   Project
+
+-   Which tool overwrites a data set? Which creates a copy of the dataset?
+
+    -   Define projection overwrites, project creates a copy
+
+**Projecting a map vs Projecting Data:**
+
+-   What is the difference between projecting a map and projecting data?
+
+    -   Projecting a map is the math to convert a sphere into a flat 2d representation
+
+    -   Projecting data is setting/changing the coordinate system of data based on a map projection formula
+
+-   Which one requires a tool?
+
+    -   Projecting data requires the project tool in ArcGIS
+
+-   Which one changes how the map looks but leaves the data alone?
+
+    -   Projecting a map will change the look of a map but not the datas positions relative to the map. 
+
+-   What is the difference between a projected and a geographic coordinate system?
+
+    -   A PCS has linear units and a projection type, a GCS has angular units, a prime meridian, a datum and a spheroid.

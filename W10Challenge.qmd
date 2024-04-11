@@ -1,0 +1,85 @@
+---
+title: "W10 Challenge: Terrain Analysis - Avalanche Risk"
+subtitle: "Tyson Brost - 3/15/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Introduction:**
+
+Avalanches pose a significant threat to travelers crossing Teton Pass. This study investigates the relationship between slope, aspect, and vegetation cover in influencing avalanche risk for the Teton Pass region. The resulting model and dynamic map in ArcGIS will be a valuable tool for backcountry users, road maintenance crews, and avalanche forecasters by providing a data-driven approach to identifying areas of high avalanche potential.
+
+## **Methods:**
+
+Criteria for avalanching to use in this study:
+
+-   slopes between 32 and 50 degrees
+
+-   faces N, NE, E or SE
+
+-   Have little or low vegetation (e.g., shrubs and brush)
+
+We sourced data from the US Public repository and then using Raster Calculations in ArcGIS, we defined binary suitability estimates for regions fitting the study's outlined criteria. In each of the following maps areas fitting the criteria are shaded while those of no concern remain a simple hillshade of the study area.
+
+**Slope Map:**
+
+![](images/SlopeRisk.png)
+
+**Aspect Map:**
+
+![](images/AspectRisk.png)
+
+**Landcover Map:**
+
+![](images/VegRisk.png)
+
+The results of these three distinct raster calculations where combined into a sum to represent areas with no, little, moderate, and severe risk. We are focusing on moderate (blue) and severe risk areas (pink).
+
+**Sum Map:**
+
+![](images/SumRisk.png)
+
+Lastly, since the regions of concern span multiple state jurisdictions, the route was split by state and a stack profile of route elevation by state was created.
+
+**Elevation Profile**
+
+![](images/ElevProf-01.png)
+
+## **Results:**
+
+Final results of the above analyses where created by calculating a half-mile buffer around the primary highways.
+
+**0.5 Mile Road Buffer:**
+
+![](images/buffer.png)
+
+We then created a summary table for total area of concern weighted by risk for each state to give a rough proportion of funding relative to risk area by state. We choose to model risk as a magnitude type factor, thus a risk of 3 was worth 10x a risk of 2.**\
+Concern by State**
+
+| State   | Risk 2 Sq Miles | Risk 3 Sq Miles | Total Weighted Risk Miles | Total Risk Percent |
+|---------|-----------------|-----------------|---------------------------|--------------------|
+| Idaho   | 1.271           | 0.00062         | 1.2773                    | 8.9%               |
+| Wyoming | 3.3556          | 0.09471         | 4.3027                    | 91.1%              |
+
+A single point was found that is able to catch a glimpse of a large proportion of areas of risk near teton pass and would be recommended as a location for an observation tower.
+
+**Lookout Vantage Map (ViewShed):**
+
+![](images/ViewRisk.png)
+
+## **Conclusions:**
+
+As a summary of our findings above, while fair portion of teton pass lies within Idaho's borders, a significantly larger proportion of areas of high avalanche risk lie along the section of the road on the Wyoming side of the border. Based on these results any federal investment should be roughly split 9 to 1 in favor of Wyoming.\
+As a final note, relatively simple criterion were used to classify areas of concern within this study, the inclusion of past avalanche data, more detailed road safety measures and other aspects could greatly increase the effectiveness of any funding allocation analysis.
+
+**\
+Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Data from Class Download
+
+    -   [USGS National Map viewer](https://apps.nationalmap.gov/downloader/)

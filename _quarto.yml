@@ -1,0 +1,128 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!drafts/"
+website:
+  title: "ArcGIS Pro Applications"
+  favicon: favicon.png
+  page-navigation: true
+  navbar:
+      background: primary
+      logo: images/favicon.png
+      left:
+        - text: "Table of Contents"
+          file: index.qmd
+        - text: "FinalProject"
+          file: FinalProposal.qmd
+        - sidebar:LearningJournals
+        - sidebar:Challenges
+        - sidebar:Data
+
+  sidebar:
+    - id: LearningJournals
+      title: "Learning Journals"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - section: "Lesson _"
+          contents:
+            - W1LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W2LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W3LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W4LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W5LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W6LearningJournal.qmd
+        # - section: "Lesson 1"
+        #   contents:
+        #     - W7LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W8LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W9LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W10LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W11LearningJournal.qmd
+        - section: "Lesson _"
+          contents:
+            - W12LearningJournal.qmd
+
+
+    - id: Challenges
+      title: "Application Challenges"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        # - section: "Lesson _"
+        #   contents:
+        #     - W1Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W2Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W3Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W4Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W5Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W6Challenge.qmd
+        - section: "Lesson 1"
+          contents:
+            - W7Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W8Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W9Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W10Challenge.qmd
+        - section: "Lesson _"
+          contents:
+            - W11Challenge.qmd
+        # - section: "Lesson _"
+        #   contents:
+        #     - W12Challenge.qmd
+
+    - id: Data
+      title: "Data Downloads"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - section: "WIP"
+          contents:
+            - W1LearningJournal.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo]
+      dark: [cosmo]
+    css: styles.css
+    toc: true
+
+editor: source
+
+

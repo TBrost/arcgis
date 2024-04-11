@@ -1,0 +1,83 @@
+---
+title: "Week 10 Learning Journal"
+date: "3/14/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Part 1
+
+Tutorial name(s) and link(s):
+
+ [Terrain Analysis Using ArcGIS Pro](https://www.esri.com/training/catalog/57630436851d31e02a43f18f/terrain-analysis-using-arcgis-pro/#!)\
+
+![](images/cert-01.png)\
+Certification from Tutorial\
+\
+\
+![](images/tutorialMap.png)Tutorial result map
+
+## Part 2
+
+###  **Contour**
+
+![](images/Contours.png)
+
+### **Change in terrain**
+
+![](images/Minus_shade.png)
+
+### **3D Scene**
+
+![](images/3Dmaps.png)
+
+### **Before and After**
+
+![](images/Oso_b4.png)
+
+![](images/Oso_aft.png)
+
+### **Topographic Profile**
+
+![](images/landslidechart.png)
+
+**How to use Stack Profile tool:**
+
+How To use the Stack Profile tool to create a topographic profile
+
+-   Input = an existing line feature class or a line drawn using\
+    the pencil tool on the tool.
+
+-   Profile Target = elevation raster
+
+    -   The tool output is a table
+
+-   Open the table (it\'s at the bottom of the Contents pane).
+
+    -   The important fields are FirstDist and FirstZ.
+
+    -   FirstDist is the distance along the line that you drew.
+
+    -   FirstZ are the elevation values along the line.
+
+-   Close the table.
+
+-   Right click the table and select \'Create Chart -- Line\'
+
+    -   Date or Number: FirstDist (first distance)
+
+    -   Aggregation: sum
+
+    -   Numeric field: FirstZ
+
+-   ProTip: If you put both LiDAR data sets in the Stack Profile targets, you can show profiles\
+    across the pre- and post-data on the same graph.
+
+**LIDAR Resolution**
+
+Vert units - US feet
+
+X cell size - 3
+
+y cell size - 3

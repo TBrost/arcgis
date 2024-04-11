@@ -1,0 +1,21 @@
+---
+title: "ArcGIS Pro Assorted Projects and Toolbox Applications"
+subtitle: "WIP"
+format: html
+editor: source
+sidebar: false
+---
+
+::: {.callout-tip appearance="minimal"}
+
+## Course Content
+
+###   [Final Project - Performing Venue Allocation in Hong Kong](FinalProposal.html)
+
+###   [Learning Projects](LearningProjectOverview.html)
+
+###   [Application Challenges](ApplicationChallengesOverview.html)
+
+
+:::
+

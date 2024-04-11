@@ -1,0 +1,40 @@
+---
+title: "W11 Challenge: ArcGIS Online"
+subtitle: "Tyson Brost - 3/22/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Story Maps & AGOL:**
+
+Task: Recreate week 3's challenge in ArcGIS online as a story map.
+
+**Results and Methods:**
+
+As I reviewed my work from week 3 and the available tools in AGOL, I opted to redesign the original work and simplify it a bit into a guided map tour rather than an article style story map.
+
+I think this does a better job at guiding the audience through the information I am sharing than the original dynamic map created in ArcGIS Pro.
+
+The story can be viewed [here](https://storymaps.arcgis.com/stories/6bc078ce506943bc8002e2717cd03e92).
+
+## **Questions:**
+
+Why do you think it might be beneficial to have geoprocessing tools in both ArcGIS Pro and in AGOL?\
+
+-   **Complementary Workflow:** AGOL's tools can be used for initial data preparation, filtering, and basic analysis. The results can then be exported to ArcGIS Pro for more in-depth analysis and visualization using its extensive toolset.
+
+-   **Accessibility:** AGOL's web-based tools make geoprocessing accessible to a wider audience without requiring powerful desktop software. This allows for quick analysis and collaboration, especially for those with limited technical expertise.
+
+-   **Standardization and Sharing:** AGOL's geoprocessing tools can be shared and used consistently across an organization. This ensures consistency in workflows and analysis across teams.
+
+**\
+Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Creative commons images
+
+    -   Authors own source images

@@ -1,0 +1,28 @@
+---
+title: "Week 11 Learning Journal"
+date: "3/2/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Part 1
+
+Tutorial name(s) and link(s):
+
+-   [Identify campgrounds near an invasive weed to prevent its spread](https://learn.arcgis.com/en/projects/solve-a-spatial-problem/arcgis-online/)
+
+    [Web Map](https://byui.maps.arcgis.com/apps/mapviewer/index.html?webmap=1e966ade734f4ac5a02e0e2e656f200c)\
+    ![](images/Screenshot 2024-03-29 104503-01.png)\
+
+## Part 2
+
+-   [Build a story map about a scientific expedition to a Guatemalan volcano](https://learn.arcgis.com/en/projects/share-the-story-of-an-expedition/)\
+    \
+    [Story Map](https://storymaps.arcgis.com/stories/707ac75d45c1463fa71f968658408d63)\
+    ![](images/Screenshot 2024-03-29 104616.png)\
+    \
+    **Insight: Web maps are super great if you need to share the resulting map across an organization. Storymaps are a great tool for final projects and reports for the public.\
+    \
+    New Tools:\
+    **Story maps have a ton of new tools available, webmaps are very similar to the desktop but have a different layout and method for calling some analysis functions.

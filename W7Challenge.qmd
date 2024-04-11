@@ -1,0 +1,33 @@
+---
+title: "W07 Challenge: Suitability Model"
+subtitle: "Tyson Brost - 2/21/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Model Building:**
+
+This week the focus was on introducing the ModelBuilder tool. We first applied it to a few of week 6's mini challenges as an example, and then used that knowledge to apply it from the start for a new set of data and criteria.
+
+**Methods:**
+
+![Earthquakes Model](images/Model.svg)
+
+**What are 3 reasons a GIS analyst might use ModelBuilder?**
+
+*It creates a well documented process flow making the result easily reproducible, additionally if built correctly can be easily adjusted to similar questions or locations with same structured data.*
+
+**Results**
+
+![Suitability Model](images/Model-01.svg)
+
+![Suitable living spaces](images/Map.png)
+
+**Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Data from Class Download

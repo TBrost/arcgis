@@ -1,0 +1,254 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ArcGIS Pro Assorted Projects and Toolbox Applications",
+    "section": "",
+    "text": "Course Content\n\n\n\n\nFinal Project - Performing Venue Allocation in Hong Kong\n\n\nLearning Projects\n\n\nApplication Challenges"
+  },
+  {
+    "objectID": "ApplicationChallengeOverview.html",
+    "href": "ApplicationChallengeOverview.html",
+    "title": "Learning Project Overview",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "ApplicationChallengeOverview.html#quarto",
+    "href": "ApplicationChallengeOverview.html#quarto",
+    "title": "Learning Project Overview",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "ApplicationChallengeOverview.html#running-code",
+    "href": "ApplicationChallengeOverview.html#running-code",
+    "title": "Learning Project Overview",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "FinalProposal.html#a.-what-is-your-spatial-question",
+    "href": "FinalProposal.html#a.-what-is-your-spatial-question",
+    "title": "Final Project Proposal",
+    "section": "A. What is your spatial question?",
+    "text": "A. What is your spatial question?\nWhat is the next best location for a new performing arts center in Hong Kong? Where would give the best marketshare? Revenue? etc… based on existing locations, road networks, and purchasing power of residents.\n\nHong Kong was chosen as the location due to the ready availability of data (specifically economic) for the area as well as a publicly available road network file for the area."
+  },
+  {
+    "objectID": "FinalProposal.html#b.-who-is-your-audience",
+    "href": "FinalProposal.html#b.-who-is-your-audience",
+    "title": "Final Project Proposal",
+    "section": "B. Who is your audience?",
+    "text": "B. Who is your audience?\n\nWho cares about your project?\nThe audience for this project would be both government officials and private investors, either may be interested in further development in the state.\nIs the project/map just for you or do you want to have a wider impact? Either is fine – just be deliberate in defining it.\nRealistically, this project is just for me, I want to get more experience using the network toolbox outside of the defined and provided data in the official ESRI tutorials."
+  },
+  {
+    "objectID": "FinalProposal.html#c.-what-are-the-sub-steps-and-gis-processes-required-to-answer-the-question",
+    "href": "FinalProposal.html#c.-what-are-the-sub-steps-and-gis-processes-required-to-answer-the-question",
+    "title": "Final Project Proposal",
+    "section": "C. What are the sub-steps and GIS processes required to answer the question?",
+    "text": "C. What are the sub-steps and GIS processes required to answer the question?\n\nBreak the problem into substeps and note the geoprocessing you plan to use; in other words, build a conceptual model for answering your question as you learned in Week 10.\n\nFor a network analysis, I will need; A (road) network layer, a set of existing points (competitors), a demand layer (population, or income adjusted population), and centroid points for the demand layer sectors.\nAs far as geoprocessing goes, I will aim to get data as close to or in the same form as those used in the tutorial so that I can focus on the network portion. If I am unable to find a demand layer that also has centroids, I will need to calculate them using the calculate geometry tool.\nFrom there I will need to import my demand points, exisiting features, and network.\n\nWill a geoprocessing model (W05) help you organize, execute, and present the sub-steps? If it makes sense, build the model.\nI honestly don’t know if the geoprocessing models fit into the network analysis framework. I think they would be used more in creating the objects passed to the network tools."
+  },
+  {
+    "objectID": "FinalProposal.html#d.-list-the-data-you-think-you-will-need-to-find-or-create-so-you-can-do-your-geoprocessing.",
+    "href": "FinalProposal.html#d.-list-the-data-you-think-you-will-need-to-find-or-create-so-you-can-do-your-geoprocessing.",
+    "title": "Final Project Proposal",
+    "section": "D. List the data you think you will need to find or create so you can do your geoprocessing.",
+    "text": "D. List the data you think you will need to find or create so you can do your geoprocessing.\nBe specific. Start by thinking about the information needed to answer your question and to execute the geoprocessing sub-steps.\n\nDo you think you can find that information in one feature class with lots of attributes or will it come from many different feature classes, tables, or raster data?\n\nI think I should be able to get most everything I need within a single feature class.\n\nWill you need to join tabular data? (Week 4)\n\nI don’t think so\n\nAre there attributes you need to derive using ‘Calculate Fields’ or ‘Calculate Geometery?’\n\nProbably, I will likely need to calculate centroids for the regions in my demand class.\n\nDo you need a DEM? (Week 9)\n\nNo\n\nDo you need to use the editing tools to create the data? (W03)\n\nNo, unless I am unable to find a relatively up-to-date point class for my existing features.\n\nDo you need to georeference any raster maps and then use the editing tools? (W08)\n\nNo.\n\nAre any of the data output from a geoprocessing step (i.e., secondary data)?\n\nYes, Centroids and the data they come from will be aggregate counts and sums of the areas they represent."
+  },
+  {
+    "objectID": "FinalProposal.html#e.-where-do-you-think-you-might-find-the-data-will-you-need-to-create-any-of-the-data",
+    "href": "FinalProposal.html#e.-where-do-you-think-you-might-find-the-data-will-you-need-to-create-any-of-the-data",
+    "title": "Final Project Proposal",
+    "section": "E. Where do you think you might find the data? Will you need to create any of the data?",
+    "text": "E. Where do you think you might find the data? Will you need to create any of the data?\nYou don’t need to find all the data yet, but you might want to try doing a web search for the data you need. Make your search specific to what you are looking for and be sure to include in the search phrase one of these terms: geospatial, GIS, shapefile, or kml. (Kml files are used by Google Earth and can be converted into feature classes using Data Management Tools in ArcGIS Pro. An example is ldstemples.kml.) If you can’t find what you need do you need to revise your question or create your own data?\nA few sources that have a variety of spatial datasets:\n\nUS data: Geospatial Data Gateway, NationalMap.gov, National Park Service data, National Transportation Database, etc. Most federal agencies as well as state, county, and city governments maintain a geospatial data repository. To find the data type the political name, the data you want (e.g., counties) and ‘geospatial data’ into a search engine. ESRI data portal.\niNaturalist (You need to create an account and use the Export tool to get the data.)\nNon-US data: Many countries have good spatial data repositories. The ESRI data portal and Living Atlas are other excellent resources for non-US data. However, sometimes these ESRI data sets cannot be altered, if this is the case, try to select it and then export it to a new feature class.\nCreate data if needed by georeferencing, editing, joining attribute tables, etc.\nYour personal list of data sources that you have kept through the semester.\nI-Learn has another link that may be useful.\n\nFor the type of data I will need, I expect most if not all of it to be available through ESRI’s living atlas and the portal. If I’m not able to find what I need, I’ll need to simplify my approach and maybe just expand on the efforts of the data provided as part of the official tutorial."
+  },
+  {
+    "objectID": "FinalProposal.html#f.-how-will-you-organize-your-data",
+    "href": "FinalProposal.html#f.-how-will-you-organize-your-data",
+    "title": "Final Project Proposal",
+    "section": "F. How will you organize your data?",
+    "text": "F. How will you organize your data?\n\nWhat will be the name of your project and project geodatabase (gdb)? (Week 2)\n\nTB_250FinalProject_NetAnalysis\nI’ll be storing everything I reference and use within this folder for future reference.\n\nWhich data will you need to add to the gdb?\n\nPretty much everything I listed above will need to be a part of the gdb. I will likely create a document that contains links and reference information for the data that won’t need to be a part of the gdb but will still be within the above defined folder.\n\nWhere will you store data created while doing your project?\n\nWithin the above defined folder."
+  },
+  {
+    "objectID": "LearningJournalTemplate.html",
+    "href": "LearningJournalTemplate.html",
+    "title": "Learning Journal Template",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nInsight:\nScreenshot(s):\n\nTutorial final map:\nCertificate when applicable (weeks 4,8,10)\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in\n\n\n\n\nthis Professional Learning\nDescribe the results including whether it adds\n\n\n\nnew data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used\n\n\n\nin this situation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "LearningJournalTemplate.html#section-1-esri-tutorials-lessons-and-certificates",
+    "href": "LearningJournalTemplate.html#section-1-esri-tutorials-lessons-and-certificates",
+    "title": "Learning Journal Template",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nInsight:\nScreenshot(s):\n\nTutorial final map:\nCertificate when applicable (weeks 4,8,10)\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in\n\n\n\n\nthis Professional Learning\nDescribe the results including whether it adds\n\n\n\nnew data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used\n\n\n\nin this situation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "LearningJournalTemplate.html#section-2-data-sources",
+    "href": "LearningJournalTemplate.html#section-2-data-sources",
+    "title": "Learning Journal Template",
+    "section": "Section 2: Data Sources",
+    "text": "Section 2: Data Sources\nKnowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own."
+  },
+  {
+    "objectID": "LearningJournalTemplate.html#section-3-class-how-tos",
+    "href": "LearningJournalTemplate.html#section-3-class-how-tos",
+    "title": "Learning Journal Template",
+    "section": "Section 3: Class How Tos",
+    "text": "Section 3: Class How Tos\nIn this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that’s not part of the assigned topics."
+  },
+  {
+    "objectID": "LearningProjectOverview.html",
+    "href": "LearningProjectOverview.html",
+    "title": "Learning Project Overview",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "LearningProjectOverview.html#quarto",
+    "href": "LearningProjectOverview.html#quarto",
+    "title": "Learning Project Overview",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "LearningProjectOverview.html#running-code",
+    "href": "LearningProjectOverview.html#running-code",
+    "title": "Learning Project Overview",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "W10Challenge.html",
+    "href": "W10Challenge.html",
+    "title": "W10 Challenge: Terrain Analysis - Avalanche Risk",
+    "section": "",
+    "text": "Avalanches pose a significant threat to travelers crossing Teton Pass. This study investigates the relationship between slope, aspect, and vegetation cover in influencing avalanche risk for the Teton Pass region. The resulting model and dynamic map in ArcGIS will be a valuable tool for backcountry users, road maintenance crews, and avalanche forecasters by providing a data-driven approach to identifying areas of high avalanche potential."
+  },
+  {
+    "objectID": "W10Challenge.html#introduction",
+    "href": "W10Challenge.html#introduction",
+    "title": "W10 Challenge: Terrain Analysis - Avalanche Risk",
+    "section": "",
+    "text": "Avalanches pose a significant threat to travelers crossing Teton Pass. This study investigates the relationship between slope, aspect, and vegetation cover in influencing avalanche risk for the Teton Pass region. The resulting model and dynamic map in ArcGIS will be a valuable tool for backcountry users, road maintenance crews, and avalanche forecasters by providing a data-driven approach to identifying areas of high avalanche potential."
+  },
+  {
+    "objectID": "W10Challenge.html#methods",
+    "href": "W10Challenge.html#methods",
+    "title": "W10 Challenge: Terrain Analysis - Avalanche Risk",
+    "section": "Methods:",
+    "text": "Methods:\nCriteria for avalanching to use in this study:\n\nslopes between 32 and 50 degrees\nfaces N, NE, E or SE\nHave little or low vegetation (e.g., shrubs and brush)\n\nWe sourced data from the US Public repository and then using Raster Calculations in ArcGIS, we defined binary suitability estimates for regions fitting the study’s outlined criteria. In each of the following maps areas fitting the criteria are shaded while those of no concern remain a simple hillshade of the study area.\nSlope Map:\n\nAspect Map:\n\nLandcover Map:\n\nThe results of these three distinct raster calculations where combined into a sum to represent areas with no, little, moderate, and severe risk. We are focusing on moderate (blue) and severe risk areas (pink).\nSum Map:\n\nLastly, since the regions of concern span multiple state jurisdictions, the route was split by state and a stack profile of route elevation by state was created.\nElevation Profile"
+  },
+  {
+    "objectID": "W10Challenge.html#results",
+    "href": "W10Challenge.html#results",
+    "title": "W10 Challenge: Terrain Analysis - Avalanche Risk",
+    "section": "Results:",
+    "text": "Results:\nFinal results of the above analyses where created by calculating a half-mile buffer around the primary highways.\n0.5 Mile Road Buffer:\n\nWe then created a summary table for total area of concern weighted by risk for each state to give a rough proportion of funding relative to risk area by state. We choose to model risk as a magnitude type factor, thus a risk of 3 was worth 10x a risk of 2.\nConcern by State\n\n\n\n\n\n\n\n\n\n\nState\nRisk 2 Sq Miles\nRisk 3 Sq Miles\nTotal Weighted Risk Miles\nTotal Risk Percent\n\n\n\n\nIdaho\n1.271\n0.00062\n1.2773\n8.9%\n\n\nWyoming\n3.3556\n0.09471\n4.3027\n91.1%\n\n\n\nA single point was found that is able to catch a glimpse of a large proportion of areas of risk near teton pass and would be recommended as a location for an observation tower.\nLookout Vantage Map (ViewShed):"
+  },
+  {
+    "objectID": "W10Challenge.html#conclusions",
+    "href": "W10Challenge.html#conclusions",
+    "title": "W10 Challenge: Terrain Analysis - Avalanche Risk",
+    "section": "Conclusions:",
+    "text": "Conclusions:\nAs a summary of our findings above, while fair portion of teton pass lies within Idaho’s borders, a significantly larger proportion of areas of high avalanche risk lie along the section of the road on the Wyoming side of the border. Based on these results any federal investment should be roughly split 9 to 1 in favor of Wyoming.\nAs a final note, relatively simple criterion were used to classify areas of concern within this study, the inclusion of past avalanche data, more detailed road safety measures and other aspects could greatly increase the effectiveness of any funding allocation analysis.\n\nData Sources:\n\nInclude a list of data and their sources.\n\nESRI Basemap\nData from Class Download\nUSGS National Map viewer"
+  },
+  {
+    "objectID": "W2LearningJournal.html",
+    "href": "W2LearningJournal.html",
+    "title": "Week 2 Learning Journal",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nCreating Points on a Map\nBuild a Geodatabase to support tourism in Salzburg\nInsight: Data will be build upon a variety of coordinate base systems… this needs to be accounted for when combining data from varied sources into a single geodatabase.\nScreenshot(s):\n\n\n\n\n\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in this Professional Learning new.\nDescribe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used in this situation.\n\n\nShapefile Properties\nAllows evaluation of spatial reference system used by data\nEnsure resulting mapped data aligns correctly.\n\n\nBatch Create Feature Dataset\nconvert multiple shapefiles into feature classes\nSaves time\n\n\nImport single Shapefile\nmove a single shape file into a database\nClearly explicit importation of a file to a specific location\n\n\nExport to geodatabase\nQuickly move multiple shapefiles or feature classes into a geodatabase\nquickly do the above\n\n\nAdd folder connection\nright click folders section in contents pane\nconnect folder on machine to project\n\n\nCreate feature Dataset\nrightclick on .gdb\ngroups together feature classes\n\n\nAdd data\nAdd feature classes to a basemap from geodatabase\nAdd new layers to a map\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "W2LearningJournal.html#section-1-creating-points-on-a-map-building-a-geodatabase",
+    "href": "W2LearningJournal.html#section-1-creating-points-on-a-map-building-a-geodatabase",
+    "title": "Week 2 Learning Journal",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nCreating Points on a Map\nBuild a Geodatabase to support tourism in Salzburg\nInsight: Data will be build upon a variety of coordinate base systems… this needs to be accounted for when combining data from varied sources into a single geodatabase.\nScreenshot(s):\n\n\n\n\n\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in this Professional Learning new.\nDescribe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used in this situation.\n\n\nShapefile Properties\nAllows evaluation of spatial reference system used by data\nEnsure resulting mapped data aligns correctly.\n\n\nBatch Create Feature Dataset\nconvert multiple shapefiles into feature classes\nSaves time\n\n\nImport single Shapefile\nmove a single shape file into a database\nClearly explicit importation of a file to a specific location\n\n\nExport to geodatabase\nQuickly move multiple shapefiles or feature classes into a geodatabase\nquickly do the above\n\n\nAdd folder connection\nright click folders section in contents pane\nconnect folder on machine to project\n\n\nCreate feature Dataset\nrightclick on .gdb\ngroups together feature classes\n\n\nAdd data\nAdd feature classes to a basemap from geodatabase\nAdd new layers to a map\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "W2LearningJournal.html#section-2-data-sources",
+    "href": "W2LearningJournal.html#section-2-data-sources",
+    "title": "Week 2 Learning Journal",
+    "section": "Section 2: Data Sources",
+    "text": "Section 2: Data Sources\nKnowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.\n\nData Portal"
+  },
+  {
+    "objectID": "W2LearningJournal.html#section-3-class-how-tos",
+    "href": "W2LearningJournal.html#section-3-class-how-tos",
+    "title": "Week 2 Learning Journal",
+    "section": "Section 3: Class How Tos",
+    "text": "Section 3: Class How Tos\nIn this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that’s not part of the assigned topics.\nN/A this week"
+  },
+  {
+    "objectID": "W3LearningJournal.html",
+    "href": "W3LearningJournal.html",
+    "title": "Week 3 Learning Journal",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nSymbolize Your Data\nLabeling Your Map\nSimple Map Layout\nMake a Layout\nInsight: Appropriate application of symbols and annotation is essential to building a good map that can effectively share the information in your data and provide answers to questions and/or spark meaningful insights.\nScreenshot(s):\n\n\n\n\n\nSymbolizing Data\n\n\n\n\n\n\n\n\nLabeling a Map\n\n\n\n\n\n\n\n\nBuilding a Layout\n\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in this Professional Learning new.\nDescribe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used in this situation.\n\n\nSymbology Properties\nAdd effects to using the structure tab within properties in symbology\nAdjust visual layers to allow more effective communication of data\n\n\nSymbol layer Drawing\nFound in main tab of symbology pane\nAllows adjusting of layer draw type and order when a layer has multiple symbols\n\n\nlabeling\nRight click layer in contents pane\nClearly explicit importation of a file to a specific location\n\n\nlabel Properties\nPosition, Fitting strategy, and class\nAdjustment of label placement, text size and specification of labeling rules from SQL\n\n\nMap Frame Activation\nlayout tab\nAllows adjustment of positioning and viewpoint of a selected map frame.\n\n\nDynamic Text\n‘Insert’ tab, graphics and text group\nCreates a dynamic element for the map that can contain a mix of static and tag references text\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "W3LearningJournal.html#section-1-creating-points-on-a-map-building-a-geodatabase",
+    "href": "W3LearningJournal.html#section-1-creating-points-on-a-map-building-a-geodatabase",
+    "title": "Week 3 Learning Journal",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nSymbolize Your Data\nLabeling Your Map\nSimple Map Layout\nMake a Layout\nInsight: Appropriate application of symbols and annotation is essential to building a good map that can effectively share the information in your data and provide answers to questions and/or spark meaningful insights.\nScreenshot(s):\n\n\n\n\n\nSymbolizing Data\n\n\n\n\n\n\n\n\nLabeling a Map\n\n\n\n\n\n\n\n\nBuilding a Layout\n\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in this Professional Learning new.\nDescribe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used in this situation.\n\n\nSymbology Properties\nAdd effects to using the structure tab within properties in symbology\nAdjust visual layers to allow more effective communication of data\n\n\nSymbol layer Drawing\nFound in main tab of symbology pane\nAllows adjusting of layer draw type and order when a layer has multiple symbols\n\n\nlabeling\nRight click layer in contents pane\nClearly explicit importation of a file to a specific location\n\n\nlabel Properties\nPosition, Fitting strategy, and class\nAdjustment of label placement, text size and specification of labeling rules from SQL\n\n\nMap Frame Activation\nlayout tab\nAllows adjustment of positioning and viewpoint of a selected map frame.\n\n\nDynamic Text\n‘Insert’ tab, graphics and text group\nCreates a dynamic element for the map that can contain a mix of static and tag references text\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "W3LearningJournal.html#section-2-data-sources",
+    "href": "W3LearningJournal.html#section-2-data-sources",
+    "title": "Week 3 Learning Journal",
+    "section": "Section 2: Data Sources",
+    "text": "Section 2: Data Sources\nKnowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.\n\nData Portal"
+  },
+  {
+    "objectID": "W3LearningJournal.html#section-3-class-how-tos",
+    "href": "W3LearningJournal.html#section-3-class-how-tos",
+    "title": "Week 3 Learning Journal",
+    "section": "Section 3: Class How To’s",
+    "text": "Section 3: Class How To’s\nIn this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that’s not part of the assigned topics.\nTip: When building contours, always use the original DEM (Digital Elevation Model)\nTapered river effect"
+  },
+  {
+    "objectID": "W4LearningJournal.html",
+    "href": "W4LearningJournal.html",
+    "title": "Week 4 Learning Journal",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nSymbolizing Map Layers\nInsight: Appropriate application of symbols and annotation is essential to building a good map that can effectively share the information in your data and provide answers to questions and/or spark meaningful insights.\nScreenshot(s):\n\n\n\n\n\nTutorial results\n\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in this Professional Learning new.\nDescribe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used in this situation.\n\n\nNominal\nNominal data contains simple names or categories. It can provide mode but not median or mean.\n\nNames\nPostal codes\nLand-use codes\nZoning categories\n\n\n\nOrdinal\nOrdinal data can be ordered, like low values to high values. It can provide mode and median but not mean.\n\nShort, medium, tall\nGood, fair, poor\n\n\n\nInterval\nInterval data has consistent intervals, such as numeric values on a magnitude scale. You can quantify the differences between each value and add or subtract values. There is no true zero. Interval data can provide mode, median, and mean.\n\nTime\nElevation\nTemperature\n\n\n\nRatio\nRatio data has all the preceding properties, but, unlike interval data, it has an actual absolute zero. Therefore, you can quantify the differences between values, and you can add, subtract, multiply, or divide values. Ratio data can provide mode, median, and mean.\n\nPopulation density\nAnnual precipitation\nCrime rate\nTree heights\nSpeed limits\n\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "W4LearningJournal.html#section-1-symbolizing-map-layers",
+    "href": "W4LearningJournal.html#section-1-symbolizing-map-layers",
+    "title": "Week 4 Learning Journal",
+    "section": "",
+    "text": "Tutorial name(s) and link(s):\nSymbolizing Map Layers\nInsight: Appropriate application of symbols and annotation is essential to building a good map that can effectively share the information in your data and provide answers to questions and/or spark meaningful insights.\nScreenshot(s):\n\n\n\n\n\nTutorial results\n\n\nNew Tools and Processes: The goal is to record information on the tools you learned and why that tool was used in the given situation. (The number of new tools and processes you include will change from week to week. Strive to have a minimum of 5; include as many more than 5 as will be helpful to you in the future.)\n\n\n\n\n\n\n\n\nNEW Tool/Process\nTool/Process Results\nPurpose\n\n\n\n\nList of the new tools or processes introduced in this Professional Learning new.\nDescribe the results including whether it adds data to the geodatabase. When helpful to you, include a mini-screenshot.\nExplain the reason this tool or process was used in this situation.\n\n\nNominal\nNominal data contains simple names or categories. It can provide mode but not median or mean.\n\nNames\nPostal codes\nLand-use codes\nZoning categories\n\n\n\nOrdinal\nOrdinal data can be ordered, like low values to high values. It can provide mode and median but not mean.\n\nShort, medium, tall\nGood, fair, poor\n\n\n\nInterval\nInterval data has consistent intervals, such as numeric values on a magnitude scale. You can quantify the differences between each value and add or subtract values. There is no true zero. Interval data can provide mode, median, and mean.\n\nTime\nElevation\nTemperature\n\n\n\nRatio\nRatio data has all the preceding properties, but, unlike interval data, it has an actual absolute zero. Therefore, you can quantify the differences between values, and you can add, subtract, multiply, or divide values. Ratio data can provide mode, median, and mean.\n\nPopulation density\nAnnual precipitation\nCrime rate\nTree heights\nSpeed limits\n\n\n\n\nAnswers to questions when applicable (e.g., Week 8)"
+  },
+  {
+    "objectID": "W4LearningJournal.html#section-2-data-sources",
+    "href": "W4LearningJournal.html#section-2-data-sources",
+    "title": "Week 4 Learning Journal",
+    "section": "Section 2: Data Sources",
+    "text": "Section 2: Data Sources\nKnowing where to find and download geospatial data can be a big challenge. In this section, list the internet data sources that you use during the semester and any others that you encounter on your own.\n\nESRI Tutorial Download"
+  },
+  {
+    "objectID": "W4LearningJournal.html#section-3-class-how-tos",
+    "href": "W4LearningJournal.html#section-3-class-how-tos",
+    "title": "Week 4 Learning Journal",
+    "section": "Section 3: Class How To’s",
+    "text": "Section 3: Class How To’s\nIn this section include documents provided in class (e.g., how to prepare a table for use in GIS, how to georeference) or notes about a specific tool you learn about that’s not part of the assigned topics.\nChloropleth Maps"
+  },
+  {
+    "objectID": "W2Challenge.html",
+    "href": "W2Challenge.html",
+    "title": "W02 Challenge: Heber Valley Girls Camp",
+    "section": "",
+    "text": "The purpose of this project is to plan and construct a geodatabase for the Heber valley Girls Camp. It will for the foundation of a comprehensive fire safety plan including the installation of fire hydrants, a station house and evacuation plan.\nMethods:\n\nInclude your schema table from the Challenge. Give the table a title. Write a short description of your schema in a complete enough manner that someone else could use it to build the geodatabase, feature datasets, feature classes and attribute fields.\n\n\n\n\nFeature Class\nClass Type\nAttribute Fields\n\n\n\n\nLake\nPolygon\nName,Depth,etc\n\n\nBuilding\nPolygon\nName, Type, capacity\n\n\nRoad\nLine\nName, m-values, type\n\n\nTrail\nLine\nName, m-values, type\n\n\nDirt/gravel pavement\nPolygon\nName, m-values, capacity\n\n\nChallenge Course\nPolygon\nName\n\n\n\nThe above schema constitutes the majority of the planned features in the project, additional features were added during development. The intent was to include as many transport and location related features as possible to ensure they can be accounted for in an evacuation route if needed.\nInclude a screenshot of your geodatabase expanded to show all appropriate feature classes Give the screenshot a title.\n\n\n\nDatabase\n\n\nInclude a screenshot of the field headers for one or more of your attribute tables. Give the screenshot a title.\n\n\n\nBuilding Feature Class Attribute Table\n\n\n\nResults\n\nInclude a jpg of your map that shows the points, lines, and polygons that you digitized and the corrected lake. You do not need to digitize the whole map. This does not need to be a layout.\n\n\n\n(I got distracted and digitized most of it)\n\n\n\nConclusion\n\nInclude one or more of the following a) how your geodatabase schema meets the purpose that you stated in the introduction, b) how you might apply geodatabase schema and metadata to another situation or your future career, or c) what future, related work you might do.\nOnce the roads and trails have been completely mapped, and additional data gathered for the depth and average water capacity of the lakes, calculations can be done to optimize the evacuation of persons from varied locations based on the listed capacities and the lengths of roads and trails available from that location. Additionally, I’m sure there is a way to create objects with a radius based on elevation combined with linear distance, this could be used to calculate the required locations to install hydrants in order to adequately cover all critical buildings and structure areas.\n\n\n\nZoomed to Camp Areas\n\n\n\n\n\nZoomed Map\n\n\n\nData Sources:\n\nInclude a list of data and their sources.\n\nData from class download\nUS Forest management areas (portal)"
+  },
+  {
+    "objectID": "W2Challenge.html#introduction",
+    "href": "W2Challenge.html#introduction",
+    "title": "W02 Challenge: Heber Valley Girls Camp",
+    "section": "",
+    "text": "The purpose of this project is to plan and construct a geodatabase for the Heber valley Girls Camp. It will for the foundation of a comprehensive fire safety plan including the installation of fire hydrants, a station house and evacuation plan.\nMethods:\n\nInclude your schema table from the Challenge. Give the table a title. Write a short description of your schema in a complete enough manner that someone else could use it to build the geodatabase, feature datasets, feature classes and attribute fields.\n\n\n\n\nFeature Class\nClass Type\nAttribute Fields\n\n\n\n\nLake\nPolygon\nName,Depth,etc\n\n\nBuilding\nPolygon\nName, Type, capacity\n\n\nRoad\nLine\nName, m-values, type\n\n\nTrail\nLine\nName, m-values, type\n\n\nDirt/gravel pavement\nPolygon\nName, m-values, capacity\n\n\nChallenge Course\nPolygon\nName\n\n\n\nThe above schema constitutes the majority of the planned features in the project, additional features were added during development. The intent was to include as many transport and location related features as possible to ensure they can be accounted for in an evacuation route if needed.\nInclude a screenshot of your geodatabase expanded to show all appropriate feature classes Give the screenshot a title.\n\n\n\nDatabase\n\n\nInclude a screenshot of the field headers for one or more of your attribute tables. Give the screenshot a title.\n\n\n\nBuilding Feature Class Attribute Table\n\n\n\nResults\n\nInclude a jpg of your map that shows the points, lines, and polygons that you digitized and the corrected lake. You do not need to digitize the whole map. This does not need to be a layout.\n\n\n\n(I got distracted and digitized most of it)\n\n\n\nConclusion\n\nInclude one or more of the following a) how your geodatabase schema meets the purpose that you stated in the introduction, b) how you might apply geodatabase schema and metadata to another situation or your future career, or c) what future, related work you might do.\nOnce the roads and trails have been completely mapped, and additional data gathered for the depth and average water capacity of the lakes, calculations can be done to optimize the evacuation of persons from varied locations based on the listed capacities and the lengths of roads and trails available from that location. Additionally, I’m sure there is a way to create objects with a radius based on elevation combined with linear distance, this could be used to calculate the required locations to install hydrants in order to adequately cover all critical buildings and structure areas.\n\n\n\nZoomed to Camp Areas\n\n\n\n\n\nZoomed Map\n\n\n\nData Sources:\n\nInclude a list of data and their sources.\n\nData from class download\nUS Forest management areas (portal)"
+  }
+]

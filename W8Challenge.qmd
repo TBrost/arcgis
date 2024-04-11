@@ -1,0 +1,107 @@
+---
+title: "W08 Challenge: Yellowstone"
+subtitle: "Tyson Brost - 3/01/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Model Building:**
+
+This week the focus was on introducing the ModelBuilder tool. We first applied it to a few of week 6's mini challenges as an example, and then used that knowledge to apply it from the start for a new set of data and criteria.
+
+**Methods:**
+
+| Data Name               | Current Coordinate System |
+|-------------------------|---------------------------|
+| Bisonwntr               | Unknown                   |
+| fire_perim              | NAD 1983 UTM Zone 12N     |
+| yell_facilities         | NAD 1983 UTM Zone 12N     |
+| yellowstone_fire_starts | Unknown                   |
+| YNP_boundary            | NAD 1927 UTM Zone 12N     |
+| YS_Roads_27             | NAD 1927 UTM Zone 12N     |
+| YS_Roads_83             | NAD 1983 UTM Zone 12N     |
+
+### Bison Map
+
+This data initially had no defined GCS and so needed to be defined with Define Projection. Since it was collected originally in NAD 1983, once defined, it was not necessary to reproject the data
+
+![](images/Bison.png)
+
+### Fire Starts Map
+
+This data initially had no defined GCS and so needed to be defined with Define Projection and then I could use project to get it to display properly on a map. Since it was not originally defined in NAD 1983, after it had been properly defined as WGS 1984, we needed to also reproject it to NAD 1983.![](images/Firestarts-02.png)
+
+### Fire Perimeter Map
+
+This data needed no changes as is was already correctly defined in the proper GSC an PSC.
+
+![](images/FirePerm-01.png)
+
+### Facilities Map
+
+This data was incorrectly defined and needed to be redefined with Define Projection and then re-Projected in NAD 1983.
+
+![](images/FacPerm.png)
+
+### YNP Boundary Maps
+
+#### Clark 1866
+
+North is up
+
+![](images/Clark.png)
+
+#### Equidistant Conic
+
+North is to the right
+
+![](images/EQ_Conic_W.png)
+
+#### NA Equidistant Conic
+
+North is up and to the right a bit
+
+![](images/NA_EQ_Conic.png)
+
+#### WGS 1984 UTM 12N
+
+North is up
+
+![](images/WGS_1984_UTM_Zone12N.png)
+
+### Roads Map
+
+The measured distances I calculated roughly averaged about 200 meters of N/S error. Referencing against the basemap, it seems that the NAD 1983 layer is most correct.
+
+![](images/roads.png)
+
+### Shaded Relief Map
+
+![](images/Shaded.png)
+
+### What is Projection on the Fly
+
+Projection on the fly is a temporary process used by ArcGIS when a layer and a map have conflicting coordinate systems and temporarily reprojects data onto a new projection so that it can match the maps coordinate system.
+
+### When does Projection on the Fly not work?
+
+If your data has been improperly defined or undefined GCS then Proj. on the fly will still attempt to reproject the data but since it is wrong in the first place, the projection on the fly will also be wrong.
+
+### What Proportion of fires start within a 5 mile radius of major roads in YSP?
+
+I would first need to create 5 mile buffer around the roads layer, and then create 2 new feature layers, one for an intersect/clip between roads and firestarts, another for an erase between roads and firestarts. then I could compare the number of observations (lengths of the attribute tables) for the two resulting firestarts layers and divide by the total number of firestarts.
+
+### Part 12 PLSS
+
+-   Sec 7 T55N R112W has an area of: 633.5 acres
+
+-   The center point of this section has a latitude of: 44.75927 and a longitude of: -110.404709\
+
+**Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Data from Class Download

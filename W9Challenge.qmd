@@ -1,0 +1,57 @@
+---
+title: "W09 Challenge: Geo-Referencing"
+subtitle: "Tyson Brost - 3/09/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## **Part A - Utilities:**
+
+**DeSoto County Florida - Utilities**
+
+**Map:**
+
+![](images/Map-01.png)
+
+Geo Referenced utilities map
+
+**\
+Benefits of Georeferencing and Schema for DeSoto County:**
+
+-   **Decision Making and Planning:** With the ability to visualize utility locations on a map, engineers can make informed decisions about maintenance, upgrades, and future planning. Additionally this data can be joined with other GIS data for increased breadth of analysis.
+
+-   **Enhanced Public Safety:** Knowing the location of utilities is crucial for emergency responders like firefighters in case of emergencies.
+
+-   **Reduced Costs:** Having a centralized and organized system can minimize wasted time searching for physical copies of maps and potentially reduce errors in locating utilities during excavation projects.
+
+**Schema for Digitizing the Map:**
+
+-   **Feature Type:** This specifies the type of utility (water main, sewer line, etc.)
+
+-   **Diameter:** Pipe diameter for the utility line.
+
+-   **Material:** Material the pipe is constructed from (PVC, cast iron, etc.)
+
+-   **Installation Date:** Year the utility was installed.
+
+-   **Depth:** Estimated depth of the utility line.
+
+## **Part B - Growth of BYU-I Campus:**
+
+![](images/Summary A4 Portrait1.jpg)
+
+**Third Control Point:\
+**Lat: 43\* 49' 27"
+
+Long: 111\* 47' 33"
+
+![](images/controlPt3.png)
+
+**Data Sources:**
+
+-   Include a list of data and their sources.
+
+    -   ESRI Basemap
+
+    -   Data from Class Download

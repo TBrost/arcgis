@@ -1,0 +1,105 @@
+---
+title: "Final Project Proposal"
+date: "3/29/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## ArcGIS in Data Science and Economics
+
+## **A. What is your spatial question?**
+
+What is the next best location for a new performing arts center in Hong Kong? Where would give the best marketshare? Revenue? etc... based on existing locations, road networks, and purchasing power of residents.\
+\
+Hong Kong was chosen as the location due to the ready availability of data (specifically economic) for the area as well as a publicly available road network file for the area.
+
+## **B. Who is your audience?**
+
+-   Who cares about your project?\
+    The audience for this project would be both government officials and private investors, either may be interested in further development in the state.
+
+-   Is the project/map just for you or do you want to have a wider impact? Either is fine -- just be deliberate in defining it.\
+    Realistically, this project is just for me, I want to get more experience using the network toolbox outside of the defined and provided data in the official ESRI tutorials.
+
+## **C. What are the sub-steps and GIS processes required to answer the question?**
+
+-   Break the problem into substeps and note the geoprocessing you plan to use; in other words, build a conceptual model for answering your question as you learned in Week 10.
+
+    -   For a network analysis, I will need; A (road) network layer, a set of existing points (competitors), a demand layer (population, or income adjusted population), and centroid points for the demand layer sectors.
+
+    -   As far as geoprocessing goes, I will aim to get data as close to or in the same form as those used in the tutorial so that I can focus on the network portion. If I am unable to find a demand layer that also has centroids, I will need to calculate them using the calculate geometry tool.
+
+    -   From there I will need to import my demand points, exisiting features, and network.
+
+-   Will a geoprocessing model (W05) help you organize, execute, and present the sub-steps? If it makes sense, build the model.
+
+    **I honestly don't know if the geoprocessing models fit into the network analysis framework. I think they would be used more in creating the objects passed to the network tools.**
+
+## **D. List the data you think you will need to find or create so you can do your geoprocessing.**
+
+Be specific. Start by thinking about the information needed to answer your question and to execute the geoprocessing sub-steps.
+
+-   Do you think you can find that information in one feature class with lots of attributes or will it come from many different feature classes, tables, or raster data?
+
+    -   I think I should be able to get most everything I need within a single feature class.
+
+-   Will you need to join tabular data? (Week 4)
+
+    -   I don't think so
+
+-   Are there attributes you need to derive using 'Calculate Fields' or 'Calculate Geometery?'
+
+    -   Probably, I will likely need to calculate centroids for the regions in my demand class.
+
+-   Do you need a DEM? (Week 9)
+
+    -   No
+
+-   Do you need to use the editing tools to create the data? (W03)
+
+    -   No, unless I am unable to find a relatively up-to-date point class for my existing features.
+
+-   Do you need to georeference any raster maps and then use the editing tools? (W08)
+
+    -   No.
+
+-   Are any of the data output from a geoprocessing step (i.e., secondary data)?
+
+    -   Yes, Centroids and the data they come from will be aggregate counts and sums of the areas they represent.
+
+## **E. Where do you think you might find the data? Will you need to create any of the data?**
+
+You don't need to find all the data yet, but you might want to try doing a web search for the data you need. Make your search specific to what you are looking for and be sure to include in the search phrase one of these terms: geospatial, GIS, shapefile, or kml. (Kml files are used by Google Earth and can be converted into feature classes using Data Management Tools in ArcGIS Pro. An example is ldstemples.kml.) If you can't find what you need do you need to revise your question or create your own data?
+
+**A few sources that have a variety of spatial datasets:**
+
+-   US data: Geospatial Data Gateway, NationalMap.gov, National Park Service data, National Transportation Database, etc. Most federal agencies as well as state, county, and city governments maintain a geospatial data repository. To find the data type the political name, the data you want (e.g., counties) and 'geospatial data' into a search engine. ESRI data portal.
+
+-   iNaturalist (You need to create an account and use the Export tool to get the data.)
+
+-   Non-US data: Many countries have good spatial data repositories. The ESRI data portal and Living Atlas are other excellent resources for non-US data. However, sometimes these ESRI data sets cannot be altered, if this is the case, try to select it and then export it to a new feature class.
+
+-   Create data if needed by georeferencing, editing, joining attribute tables, etc.
+
+-   Your personal list of data sources that you have kept through the semester.
+
+-   I-Learn has another link that may be useful.\
+    \
+    **For the type of data I will need, I expect most if not all of it to be available through ESRI's living atlas and the portal. If I'm not able to find what I need, I'll need to simplify my approach and maybe just expand on the efforts of the data provided as part of the official tutorial.**
+
+## **F. How will you organize your data?**
+
+-   What will be the name of your project and project geodatabase (gdb)? (Week 2)
+
+    -   TB_250FinalProject_NetAnalysis
+
+    -   I'll be storing everything I reference and use within this folder for future reference.
+
+-   Which data will you need to add to the gdb?
+
+    -   Pretty much everything I listed above will need to be a part of the gdb. I will likely create a document that contains links and reference information for the data that won't need to be a part of the gdb but will still be within the above defined folder.
+
+-   Where will you store data created while doing your project?
+
+    -   Within the above defined folder.

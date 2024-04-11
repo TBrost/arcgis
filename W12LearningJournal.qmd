@@ -1,0 +1,64 @@
+---
+title: "Week 12 Learning Journal"
+date: "3/29/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## ArcGIS in Data Science and Economics
+
+ArcGIS Pro offers a strong foundation for applying geographic context to data science and economic analyses, particularly in areas of optimization, spatial, and temporal modeling. Here's how:
+
+**Data Preparation and Exploration:**
+
+-   **Data Engineering Tools:** ArcGIS Pro provides a "Data Engineering" view for data cleaning, manipulation, and integration. You can explore data with maps and charts, identify trends and patterns, and utilize tools specific to your data type for better preparation.
+
+**Spatial Analysis for Economics:**
+
+-   **Location Intelligence:** Understanding geographic distribution of economic factors is crucial. ArcGIS helps visualize customer demographics, analyze market trends in specific areas, and identify optimal locations for businesses.
+
+-   **Spatial Econometrics:** You can leverage spatial statistics tools to model relationships between economic variables and geographic locations. This allows you to explore how spatial factors like proximity to transportation or resources affect economic activity.
+
+**Spatial Optimization:**
+
+-   **Network Analysis:** ArcGIS excels at network analysis, allowing you to model transportation networks, identify optimal delivery routes, and solve location-allocation problems. This is valuable for logistics companies, delivery services, and urban planning.
+
+    -   [Tutorial](https://pro.arcgis.com/en/pro-app/3.1/help/analysis/networks/location-allocation-tutorial.htm)
+
+-   **Site Suitability Analysis:** When considering factors like infrastructure, demographics, and environmental limitations, ArcGIS can help find optimal locations for facilities, investments, or development projects.\
+    \
+    Site Suitability relates back to our avalanche challenge and the network analysis tutorial was super fun.
+
+**Spatial-Temporal Modeling and Analysis:**
+
+-   **Space-Time Cluster Analysis:** Identify temporal and spatial clusters in economic data. This can reveal patterns like business booms in certain areas or economic downturns concentrated in specific locations over time.
+
+    -   [Tutorial](https://learn.arcgis.com/en/projects/identify-popular-places-with-spatiotemporal-data-science/)
+
+-   **Space-Time Forecasting:** ArcGIS allows incorporating spatial context into economic forecasting models, leading to more accurate predictions that consider geographic variations.
+
+    -   [Tutorial](https://learn.arcgis.com/en/projects/investigate-pollution-patterns-with-space-time-analysis/)
+
+Both of these were introduced to me during the professional learning tutorials I attempted this week and its a huge amount of new tools and processes compared to the few basic ones this course introduced us too.
+
+**Integration with Data Science Tools:**
+
+-   **R-ArcGIS Bridge:** This bridge facilitates data exchange between ArcGIS Pro and the R statistical programming language. You can leverage R's advanced statistical capabilities for in-depth economic analysis while maintaining the spatial context within ArcGIS.\
+    \
+    I tried to implement this myself a few weeks back but found the documentation a bit confusing.
+
+**Additional Considerations:**
+
+-   **Python Scripting:** ArcGIS Pro supports Python scripting, allowing you to automate workflows and integrate with other data science libraries like pandas for advanced data manipulation.\
+    \
+    I used python scripting instead of the tutorial defined methods to do some of the filtering and selection logic in a few of the challenges and learning journals throughout the semester.
+
+-   **ArcGIS Notebooks:** Similar to Jupyter Notebooks, ArcGIS Notebooks combine code, maps, and visualizations in a single environment for reproducible data science workflows with a spatial twist.\
+    \
+    I haven't used these yet but they sound pretty interesting.
+
+By utilizing these functionalities, ArcGIS Pro becomes a powerful tool for data scientists and economists to analyze and model spatial and temporal trends in economic data, leading to more informed decisions and optimized outcomes.\
+\
+\
+[Here](https://docs.google.com/presentation/d/1B4TYoZ8WtIEQoPVXaPg-Xf-sXkcpAYLtM7_xwoCYPr4/edit?usp=sharing) is a link to a (very basic) Slideshow with some of the final outcomes of the various tutorials.\

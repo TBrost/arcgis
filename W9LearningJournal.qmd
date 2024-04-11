@@ -1,0 +1,37 @@
+---
+title: "Week 9 Learning Journal"
+date: "03/06/2024"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Section 1: Projections
+
+Tutorial name(s) and link(s):
+
+ [Learn How to Georeference](https://www.youtube.com/watch?v=2juIvdeWIFs&t=226s%20)\
+ [Georeference Imagery in ArcGIS Pro.](https://learn.arcgis.com/en/projects/georeference-imagery-in-arcgis-pro/)\
+\
+**Insight:**\
+There's a good deal of this weeks content such as the RMSE and different transformation methods that make way more sense having taken plenty of stats classes and I think that its definitely helped me understand the georeferencing process better having a deeper understanding of how these calculation methods work and why \_\_\_\_ transform might work better than \_\_\_\_ transform.\
+\
+**Maps:**
+
+![College Referencing (Tutorial)](images/CollegeGeoRef.png)\
+College Town (Tutorial)\
+\
+![Teton Referencing](images/TetonGeoref.png)\
+Teton Area Geo referencing\
+![Control Point Table](images/PT_export.png)\
+Control Point Table
+
+**Geo-referencing Work Flow:**
+
+1.  Convert Image to jpg/tiff/png if not already in that form
+2.  Add Image to your map and using the imagery tab begin the georef process
+3.  Turn off auto apply (usually), and set SRS
+4.  Add control Points, starting with any known coordinates if available, otherwise...
+5.  using fit to display, scale, rotate, etc. adjust the image to the base map as best possible by eye, then add control points manually (using 'L' to swap views)
+6.  review the effects of the various transformation options
+7.  Save the Geo-referencing and export the control point table for safe keeping.
